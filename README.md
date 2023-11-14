@@ -28,11 +28,11 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   </tr>
 
   <tr>
-    <td>GetTransactionById</td>
-    <td>GET</td>
-    <td><i>/transactions/{transactionId}</i></td>
-    <td>No body</td>
-    <td>A single transaction</td>
+    <td>RegisterMovie</td>
+    <td>POST</td>
+    <td><i>/film</i></td>
+    <td>SON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</td>
+    <td>To register movie</td>
   </tr>
 
    <tr>
