@@ -114,10 +114,10 @@ endpoints relacionados a um CRUD de **filmes**
 ##  Requisitos
 
 Requisitos Funcionais 
-- [x] O usuário deve poder registar um filme ou estúdios;
+- [x] O usuário deve poder registar um filme ou estúdio;
 - [x] O usuário deve poder obter uma lista com os filmes ou estúdios registrados;
-- [x] O usuário deve poder listar todas os filmes feitos por um estúdio;
-- [x] O usuário deve poder atualizar os filmes ou estúdios já registrados anteriormente;
+- [x] O usuário deve poder listar todos os filmes feitos por um estúdio;
+- [x] O usuário deve poder atualizar os filmes ou estúdios registrados anteriormente;
 - [x] O usuário deve poder deletar os filmes ou estúdios;
 
 
