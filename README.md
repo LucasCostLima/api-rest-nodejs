@@ -19,6 +19,49 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
     <th>Returns</th>
   </tr>
   
+
+  <tr>
+    <td>RegisterFilm</td>
+    <td>POST</td>
+    <td><i>/film</i></td>
+    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</td>
+    <td>The register movie</td>
+  </tr>
+
+  <tr>
+    <td>ListFilm</td>
+    <td>GET</td>
+    <td><i>/film</i></td>
+    <td>No body</td>
+    <td>All Movies</td>
+  </tr>
+
+  <tr>
+    <td>ListFilmByStudio</td>
+    <td>GET</td>
+    <td><i>studio/film/{StudioId}</i></td>
+    <td>No body</td>
+    <td>All Movies</td>
+  </tr>
+
+   <tr>
+    <td>UpdateFilm</td>
+    <td>PUT</td>
+    <td><i>/film/{filmId}</i></td>
+    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</code></td>
+    <td>The update movie </td>
+  </tr>
+
+  <tr>
+    <td>DeleteFilm</td>
+    <td>DELETE</td>
+    <td><i>/film/{filmId}</i></td>
+    <td>No body</td>
+    <td>The delete movie</td>
+  </tr>
+</table>
+
+  
   <tr>
     <td>ListFilm</td>
     <td>GET</td>
