@@ -119,10 +119,9 @@ Requisitos Funcionais
 - [x] O usuário deve poder listar todas os filmes feitos por um estúdio;
 - [x] O usuário deve poder atualizar os filmes já registrados anteriormente;
 - [x] O usuário deve poder deletar os filmes;
-
-Regras de Negócio
-- [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito que será subtraído;
-- [X] Deve ser possível identificar o usuário entre as requisições;
-- [X] O usuário só pode visualizar transações que ele criou;
+- [x] O usuário deve poder registar um estúdio;
+- [x] O usuário deve poder obter uma lista com os estúdios registrados;
+- [x] O usuário deve poder atualizar os estúdios já registrados anteriormente;
+- [x] O usuário deve poder deletar os estúdios;
 
 
