@@ -8,7 +8,7 @@ API REST para gerenciar filmes e estúdios desenvolvida com Node.js, JavaScript,
 
 ## Endpoints
 
-Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estúdios**
+endpoints relacionados a um CRUD de **filmes**
  
 <table>
   <tr>
@@ -39,9 +39,9 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   <tr>
     <td>ListFilmByStudio</td>
     <td>GET</td>
-    <td><i>studio/film/{StudioId}</i></td>
+    <td><i>film/studio/{StudioId}</i></td>
     <td>No body</td>
-    <td>All Movies</td>
+    <td>All Movies by Studio</td>
   </tr>
 
    <tr>
@@ -61,37 +61,41 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   </tr>
 </table>
 
+
+  ## Endpoints
+
+  endpoints relacionados a um CRUD de **Estúdios**
   
   <tr>
-    <td>ListFilm</td>
+    <td>ListStudios</td>
     <td>GET</td>
-    <td><i>/film</i></td>
+    <td><i>/studio</i></td>
     <td>No body</td>
-    <td>All Movies</td>
+    <td>All studios</td>
   </tr>
 
   <tr>
-    <td>RegisterFilm</td>
+    <td>RegisterStudio</td>
     <td>POST</td>
-    <td><i>/film</i></td>
-    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</td>
-    <td>The register movie</td>
+    <td><i>/studio</i></td>
+    <td>JSON with the properties <br /> <code>title: string, headquarters: string, unique: true | false, studioid: number </td>
+    <td>The register studio</td>
   </tr>
 
    <tr>
-    <td>UpdateFilm</td>
+    <td>UpdateStudio</td>
     <td>PUT</td>
-    <td><i>/film/{filmId}</i></td>
-    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</code></td>
-    <td>The update movie </td>
+    <td><i>/studio/{studioId}</i></td>
+    <td>JSON with the properties <br /> <code>title: string, headquarters: string, unique: true | false, studioid: number </code></td>
+    <td>The update studio </td>
   </tr>
 
   <tr>
-    <td>DeleteFilm</td>
+    <td>DeleteStudio</td>
     <td>DELETE</td>
-    <td><i>/film/{filmId}</i></td>
+    <td><i>/studio/{studioId}</i></td>
     <td>No body</td>
-    <td>The delete movie</td>
+    <td>The delete studio</td>
   </tr>
 </table>
 
