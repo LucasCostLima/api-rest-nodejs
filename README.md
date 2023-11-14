@@ -1,6 +1,6 @@
 # API REST Node.js
 
-API REST para gerenciar transações desenvolvida com Node.js, TypeScript, SQLite e Testes E2E.
+API REST para gerenciar filmes e estúdios desenvolvida com Node.js, JavaScript, Mongoose, MongoDB e Express.js..
 
 <p align="left">
   <img alt="Repo's top languages" src="https://img.shields.io/static/v1?label=Main%20technology&message=Node.js&style=for-the-badge&color=007D9C&labelColor=000000">
@@ -8,7 +8,7 @@ API REST para gerenciar transações desenvolvida com Node.js, TypeScript, SQLit
 
 ## Endpoints
 
-Nessa API você encontrará endpoints relacionados a um CRUD de **transações**
+Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estúdios**
  
 <table>
   <tr>
@@ -20,11 +20,11 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **transações**
   </tr>
   
   <tr>
-    <td>ListTransactions</td>
+    <td>ListMovies</td>
     <td>GET</td>
-    <td><i>/transactions</i></td>
+    <td><i>/film</i></td>
     <td>No body</td>
-    <td>All transactions</td>
+    <td>All Movies</td>
   </tr>
 
   <tr>
