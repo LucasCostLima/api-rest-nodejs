@@ -65,7 +65,8 @@ endpoints relacionados a um CRUD de **filmes**
   ## Endpoints
 
   endpoints relacionados a um CRUD de **Estúdios**
-  
+
+  <table>
   <tr>
     <td>ListStudios</td>
     <td>GET</td>
