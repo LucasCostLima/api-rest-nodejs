@@ -36,7 +36,7 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   </tr>
 
    <tr>
-    <td>UpdateMovie</td>
+    <td>UpdateFilm</td>
     <td>PUT</td>
     <td><i>/film/{filmId}</i></td>
     <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</code></td>
@@ -44,7 +44,7 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   </tr>
 
   <tr>
-    <td>DeleteMovie</td>
+    <td>DeleteFilm</td>
     <td>DELETE</td>
     <td><i>/film/{filmId}</i></td>
     <td>No body</td>
