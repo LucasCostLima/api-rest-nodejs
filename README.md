@@ -67,13 +67,7 @@ endpoints relacionados a um CRUD de **filmes**
   endpoints relacionados a um CRUD de **Estúdios**
 
   <table>
-  <tr>
-    <td>ListStudios</td>
-    <td>GET</td>
-    <td><i>/studio</i></td>
-    <td>No body</td>
-    <td>All studios</td>
-  </tr>
+
 
   <tr>
     <td>RegisterStudio</td>
