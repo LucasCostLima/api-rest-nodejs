@@ -20,7 +20,7 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   </tr>
   
   <tr>
-    <td>ListMovies</td>
+    <td>ListFilm</td>
     <td>GET</td>
     <td><i>/film</i></td>
     <td>No body</td>
@@ -28,27 +28,27 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
   </tr>
 
   <tr>
-    <td>RegisterMovie</td>
+    <td>RegisterFilm</td>
     <td>POST</td>
     <td><i>/film</i></td>
-    <td>SON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</td>
-    <td>To register movie</td>
+    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</td>
+    <td>The register movie</td>
   </tr>
 
    <tr>
-    <td>CreateTransaction</td>
-    <td>POST</td>
-    <td><i>/transactions</i></td>
-    <td>JSON with the properties <br /> <code>title: string, amount: number, type: "credit" | "debit"</code></td>
-    <td>The created transaction</td>
+    <td>UpdateMovie</td>
+    <td>PUT</td>
+    <td><i>/film/{filmId}</i></td>
+    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</code></td>
+    <td>The update movie </td>
   </tr>
 
   <tr>
-    <td>GetSummary</td>
-    <td>GET</td>
-    <td><i>/transactions/summary</i></td>
+    <td>DeleteMovie</td>
+    <td>DELETE</td>
+    <td><i>/film/{filmId}</i></td>
     <td>No body</td>
-    <td>The balance of all transactions</td>
+    <td>The delete movie</td>
   </tr>
 </table>
 
@@ -56,8 +56,9 @@ Nessa API você encontrará endpoints relacionados a um CRUD de **filmes e estú
 
 - Typescript
 - Node.js
-- SQLite
-- Testes E2E com Vitest
+- Mongoose
+- MongoDb
+- Express.js.
 
 
 ##  Requisitos
