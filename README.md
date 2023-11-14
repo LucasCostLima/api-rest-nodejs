@@ -1,6 +1,6 @@
 # API REST Node.js
 
-API REST para gerenciar filmes e estúdios desenvolvida com Node.js, JavaScript, Mongoose, MongoDB e Express.js..
+API REST para gerenciar transações desenvolvida com Node.js, TypeScript, SQLite e Testes E2E.
 
 <p align="left">
   <img alt="Repo's top languages" src="https://img.shields.io/static/v1?label=Main%20technology&message=Node.js&style=for-the-badge&color=007D9C&labelColor=000000">
@@ -8,7 +8,7 @@ API REST para gerenciar filmes e estúdios desenvolvida com Node.js, JavaScript,
 
 ## Endpoints
 
-endpoints relacionados a um CRUD de **filmes**
+Nessa API você encontrará endpoints relacionados a um CRUD de **transações**
  
 <table>
   <tr>
@@ -19,86 +19,36 @@ endpoints relacionados a um CRUD de **filmes**
     <th>Returns</th>
   </tr>
   
-
   <tr>
-    <td>RegisterFilm</td>
-    <td>POST</td>
-    <td><i>/film</i></td>
-    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</td>
-    <td>The register movie</td>
+    <td>ListTransactions</td>
+    <td>GET</td>
+    <td><i>/transactions</i></td>
+    <td>No body</td>
+    <td>All transactions</td>
   </tr>
 
   <tr>
-    <td>ListFilm</td>
+    <td>GetTransactionById</td>
     <td>GET</td>
-    <td><i>/film</i></td>
+    <td><i>/transactions/{transactionId}</i></td>
     <td>No body</td>
-    <td>All Movies</td>
-  </tr>
-
-  <tr>
-    <td>ListFilmByStudio</td>
-    <td>GET</td>
-    <td><i>film/studio/{StudioId}</i></td>
-    <td>No body</td>
-    <td>All Movies by Studio</td>
+    <td>A single transaction</td>
   </tr>
 
    <tr>
-    <td>UpdateFilm</td>
-    <td>PUT</td>
-    <td><i>/film/{filmId}</i></td>
-    <td>JSON with the properties <br /> <code>title: string, description: string, image_url: string, trailer_url: string, release_year: number, studioId: number, name_studio: number</code></td>
-    <td>The update movie </td>
-  </tr>
-
-  <tr>
-    <td>DeleteFilm</td>
-    <td>DELETE</td>
-    <td><i>/film/{filmId}</i></td>
-    <td>No body</td>
-    <td>The delete movie</td>
-  </tr>
-</table>
-
-
-  ## Endpoints
-
-  endpoints relacionados a um CRUD de **Estúdios**
-
-  <table>
-
-
-  <tr>
-    <td>RegisterStudio</td>
+    <td>CreateTransaction</td>
     <td>POST</td>
-    <td><i>/studio</i></td>
-    <td>JSON with the properties <br /> <code>title: string, headquarters: string, unique: true | false, studioid: number </td>
-    <td>The register studio</td>
+    <td><i>/transactions</i></td>
+    <td>JSON with the properties <br /> <code>title: string, amount: number, type: "credit" | "debit"</code></td>
+    <td>The created transaction</td>
   </tr>
 
   <tr>
-    <td>ListStudios</td>
+    <td>GetSummary</td>
     <td>GET</td>
-    <td><i>/studio</i></td>
+    <td><i>/transactions/summary</i></td>
     <td>No body</td>
-    <td>All studios</td>
-  </tr>
-
-   <tr>
-    <td>UpdateStudio</td>
-    <td>PUT</td>
-    <td><i>/studio/{studioId}</i></td>
-    <td>JSON with the properties <br /> <code>title: string, headquarters: string, unique: true | false, studioid: number </code></td>
-    <td>The update studio </td>
-  </tr>
-
-  <tr>
-    <td>DeleteStudio</td>
-    <td>DELETE</td>
-    <td><i>/studio/{studioId}</i></td>
-    <td>No body</td>
-    <td>The delete studio</td>
+    <td>The balance of all transactions</td>
   </tr>
 </table>
 
@@ -106,20 +56,19 @@ endpoints relacionados a um CRUD de **filmes**
 
 - Typescript
 - Node.js
-- Mongoose
-- MongoDb
-- Express.js.
+- SQLite
+- Testes E2E com Vitest
 
 
 ##  Requisitos
 
 Requisitos Funcionais 
-- [x] O usuário deve poder registar um filme ou estúdio;
-- [x] O usuário deve poder obter uma lista com os filmes ou estúdios registrados;
-- [x] O usuário deve poder listar todos os filmes feitos por um estúdio;
-- [x] O usuário deve poder atualizar os filmes ou estúdios registrados anteriormente;
-- [x] O usuário deve poder deletar os filmes ou estúdios;
+- [x] O usuário deve poder criar uma transação;
+- [x] O usuário deve poder obter um extrato de uma unica transação;
+- [x] O usuário deve poder listar todas transações que já ocorreram;
+- [x] O usuário deve poder visualizar o somatório após todas as transações;
 
-
-
-
+Regras de Negócio
+- [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito que será subtraído;
+- [X] Deve ser possível identificar o usuário entre as requisições;
+- [X] O usuário só pode visualizar transações que ele criou;
