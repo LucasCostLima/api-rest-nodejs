@@ -114,10 +114,11 @@ endpoints relacionados a um CRUD de **filmes**
 ##  Requisitos
 
 Requisitos Funcionais 
-- [x] O usuário deve poder criar uma transação;
-- [x] O usuário deve poder obter um extrato de uma unica transação;
-- [x] O usuário deve poder listar todas transações que já ocorreram;
-- [x] O usuário deve poder visualizar o somatório após todas as transações;
+- [x] O usuário deve poder registar um filme;
+- [x] O usuário deve poder obter uma lista com os filmes registrados;
+- [x] O usuário deve poder listar todas os filmes feitos por um estúdio;
+- [x] O usuário deve poder atualizar os filmes já registrados anteriormente;
+- [x] O usuário deve poder deletar os filmes;
 
 Regras de Negócio
 - [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito que será subtraído;
